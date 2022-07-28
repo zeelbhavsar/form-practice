@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e60e237951.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
+
+    .main {
+
+        height: 40px;
+        background-color: red;
+
+        padding: 10px;
+
+
+    }
+
+    .sub {
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        left: 200px;
+        visibility: hidden;
+    }
+
+    .last {
+        background-color: red;
+        position: absolute;
+        top: 60px;
+        left: 105px;
+        visibility: hidden;
+    }
+
+    .last1 {
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        left: 122px;
+        visibility: hidden;
+    }
+
+    .main .mainlist {
+        display: inline-flex;
+        list-style: none;
+
+    }
+
+    .sub .sublist,
+    .last .lastlist,
+    .last1 .lastlist1 {
+        list-style: none;
+        margin: 10px 0px;
+    }
+
+    .sub .sublist li {
+        margin: -5px 0px;
+    }
+
+    .last .lastlist li {
+        width: 100px;
+        margin: -10px 0px;
+    }
+
+    .main .mainlist li {
+        padding: 10px;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    .main:hover .sub,
+    .sub:hover .last,
+    .last:hover .last1 {
+        visibility: visible;
+
+    }
+
+    .last .lastlist li i {
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <ul class="mainlist">
+            <li>home</li>
+            <li>profile</li>
+            <li>message</li>
+            <li>courses<i class="fa fa-caret-down"></i>
+                <div class="sub">
+                    <ul class="sublist">
+                        <li>.NET</li>
+                        <li>java</li>
+                        <li>MSOffice <i class="fa fa-caret-right"></i>
+                            <div class="last">
+                                <ul class="lastlist">
+                                    <li>Word</li>
+                                    <li>Excel<i class="fa fa-caret-right"></i>
+                                        <div class="last1">
+                                            <ul class="lastlist1">
+                                                <li>Basic</li>
+                                                <li>Advance</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Power point</li>
+                                    <li>Access</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+
+		article
+		{
+			background-color: hotpink;
+			height: 400px;
+			width: 1118px;
+			float: left;
+			position: relative;
+			line-height: 40px;
+
+		}
+		footer
+		{
+			height: 80px;
+			background-color: lightblue;
+			
+			clear: both;
+		}

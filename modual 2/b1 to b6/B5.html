@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.mlist{
+			list-style: none;
+			display: inline-flex;
+			position: relative;
+			padding: 10px;}
+
+		.main{
+			background: black;
+			color: white;}
+		.sub{
+			visibility: hidden;}
+		.slist{
+			list-style: none;
+			background-color: black;}
+		.sublist{
+			position: absolute;
+			right: 5px;
+			clear: both;
+			top: 30px;
+			width: 60px;
+		}
+		.mainlist .mlist:hover .sub .sublist{
+			visibility: visible;
+			position: absolute;
+			text-align: left;
+		}				
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<ul class="mainlist">
+			<li class="mlist">home</li>
+			<li class="mlist">about</li>
+			<li class="mlist">services
+				<div class="sub">
+					<ul class="sublist">
+						<li class="slist">list1</li>
+						<li class="slist">list2</li>
+						<li class="slist">list3</li>
+					</ul>
+				</div>
+				</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+			.main
+			{
+				border: 1px solid;
+				height: 600px;
+				width: 400px;
+				text-align: left;
+				padding: 10px;
+				background-color: lightblue;
+			}
+			.first
+			{
+				float: left;
+				
+
+			}
+			.third
+			{
+				float: left;
+				clear: both;
+			}
+			.fourth
+			{
+				float: left;	
+				clear: both;
+				
+			}
+			.fifth
+			{
+				float: left;
+				clear: both;
+			}
+			div .i1
+			{
+				float: right;
+				margin-top: 75px;
+				margin-right: 45px;				
+			}
+			.bac
+			{
+				width: 350px;
+			}
+			
+			
+
+
+	</style>
+</head>
+<body>
+<center>
+<div class="main">	
+	<header><h3>Bank informathion form</h3></header>
+	<table class="first">
+			<tr>
+				<td>Bank name</td>
+			</tr>
+			<tr>
+				<td><input type="name" name="name"></td>
+			</tr>	
+			<tr>
+				<td>Branch number</td>
+			</tr>
+			<tr>
+				<td><input type="num" name="number"></td>
+			</tr>
+			
+			
+	</table>
+	<table class="sec">
+		<tr>
+				<td>Branch name</td>
+			</tr>	
+			<tr>
+				<td><input type="name" name="name"></td>
+			</tr>
+	</table>
+
+	<table class="third">
+			<tr>
+				<td>Branch address</td>
+			</tr>
+			<tr>	
+				<td><input type="address" name="address" placeholder="street address" ></td>
+			</tr>
+			<tr>	
+				<td><input type="address" name="address" placeholder="street address line 2"  ></td>
+			</tr>
+		
+			<tr>	
+				<td><input type="city" name="city" placeholder="city"></td>
+			</tr>
+			<tr>
+				<td><input type="code" name="code" placeholder="postal/zip code"></td>
+			</tr>
+		</table>	
+		<div class="i1">
+		<table>	
+			<tr>
+				<td><input type="region" name="region" placeholder="region"></td>
+			</tr>
+			
+			<tr>	
+				<td><input type="romania" name="romania" placeholder="romania"></td>
+			</tr>
+		</table>	
+		</div>
+	</table>
+	<table>
+			<tr>
+				<td>Bank account currency</td>
+				
+			</tr>
+			<tr>
+				<td><input type="account" name="account" class="bac"></td>
+			</tr>
+			<tr>
+				<td>swift/Bic</td>
+			</tr>	
+			<tr>
+				<td><input type="name" name="name" class="bac"></td>
+			</tr>	
+			<tr>
+				<td>IBAN no.</td>
+				
+			</tr>
+			<tr>
+				<td><input type="number" name="number" class="bac"></td>
+			</tr>	
+			<tr>
+				<td>bank account name</td>		
+			</tr>
+			<tr>
+				<td><input type="name" name="name" class="bac"></td>
+			</tr>	
+	</table>
+	<table class="fifth">
+		    <tr>
+                <td>Account type</td>
+            </tr>
+            <tr>    
+                <td><input type="radio" name="checking">checking<br>
+                    <input type="radio" name="savings">savings <br>
+                    <input type="radio" name="other">other <br>
+                </td>       
+            </tr>
+	</table>
+			
+
+</div>
+</center>
+</body>
+</html>
